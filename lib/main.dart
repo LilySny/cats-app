@@ -1,7 +1,9 @@
 import 'package:cats_app/src/core/firebase_config/firebase_options.dart';
-import 'package:cats_app/src/shared/theme/color_scheme.dart';
+import 'package:cats_app/src/home/view/pages/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+
+import 'src/shared/theme/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,23 +22,16 @@ class CatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Cats App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: catsAppColorScheme,
+        buttonTheme: defaultButtonTheme,
+        textTheme: defaultTextTheme,
+        primaryColor: catsAppColorScheme.primary,
+        backgroundColor: catsAppColorScheme.background,
       ),
       home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
     );
   }
 }

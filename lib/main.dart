@@ -1,4 +1,4 @@
-import 'package:cats_app/firebase_options.dart';
+import 'package:cats_app/src/core/firebase_config/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

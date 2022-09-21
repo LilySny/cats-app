@@ -45,10 +45,9 @@ final TextTheme defaultTextTheme = _textThemeType.copyWith(
   ),
   caption: _textThemeType.caption?.copyWith(
     color: catsAppColorScheme.primary,
-    fontSize: 14.0,
+    fontSize: 12.0,
     height: 1.33,
-    fontWeight: FontWeight.w500,
-    letterSpacing: 1.25,
+    letterSpacing: 0.4,
     fontFamily: 'Roboto',
   ),
 );

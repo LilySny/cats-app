@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 final ColorScheme catsAppColorScheme = const ColorScheme.light().copyWith(
   primary: primaryBaseOrange,
-  onPrimary: primaryLightOrange,
+  onPrimary: primaryMediumOrange,
   secondary: neutralBlack,
   onSecondary: neutralMediumBlack,
   tertiary: neutralWhite,

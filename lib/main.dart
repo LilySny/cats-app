@@ -26,7 +26,6 @@ class CatsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: catsAppColorScheme,
-        buttonTheme: defaultButtonTheme,
         textTheme: defaultTextTheme,
         primaryColor: catsAppColorScheme.primary,
         backgroundColor: catsAppColorScheme.background,

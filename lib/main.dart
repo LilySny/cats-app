@@ -1,9 +1,9 @@
+import 'package:cats_app/src/core/service_locator.dart';
 import 'package:cats_app/src/core/firebase_config/firebase_options.dart';
-import 'package:cats_app/src/home/view/pages/home_page.dart';
+import 'package:cats_app/src/home/home.dart';
+import 'package:cats_app/src/shared/styles/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-import 'src/shared/theme/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +11,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  setup();
 
   runApp(const CatsApp());
 }

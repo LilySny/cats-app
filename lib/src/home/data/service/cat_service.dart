@@ -1,3 +1,5 @@
+import 'package:cats_app/src/home/home.dart';
+
 abstract class CatService {
-  Stream<Object> getCats();
+  Future<List<CatModel>> getCats();
 }

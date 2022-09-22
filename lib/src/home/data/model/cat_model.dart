@@ -8,14 +8,14 @@ class CatModel {
 
   final String id;
   final String name;
-  final String description;
   final String imageUrl;
+  final String description;
 
   factory CatModel.fromJson(Map<String, dynamic> json) => CatModel(
-        description: json["description"],
-        id: json["id"],
-        imageUrl: json["image-url"],
-        name: json["name"],
+        name: json["name"] ?? '',
+        description: json["description"] ?? '',
+        id: json["id"] ?? '',
+        imageUrl: json["image-url"] ?? '',
       );
 
   Map<String, dynamic> toJson() => {
